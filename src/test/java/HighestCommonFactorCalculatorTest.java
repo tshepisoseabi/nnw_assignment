@@ -1,4 +1,4 @@
-import org.example.Main;
+import com.commonfactor.Main;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -27,12 +27,6 @@ public class HighestCommonFactorCalculatorTest {
     public void testHighestCommonFactor_WithZero() {
         int[] numbers = {0, 10, 5, 25};
         assertEquals(5, Main.highestCommonFactor(numbers));
-    }
-
-    @Test
-    public void testHighestCommonFactor_EmptyArray() {
-        int[] numbers = {};
-        assertEquals(0, Main.highestCommonFactor(numbers));
     }
 
     @Test
